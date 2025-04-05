@@ -24,7 +24,7 @@ public class Main {
         fc.setName(dName);
         fc.setAge(dAge);
         System.out.println("Hi "+ fc.name +" Do you know I can save the information you give on console.");
-        System.out.println("Please enter 1 for writing to file  and 2 for display previous messages : ");
+        System.out.println("Please enter 1 for writing to file  and 2 for display previous messages or 3 to delete content of text file ");
 
         Scanner rPrompt = new Scanner(System.in);
         String dPrompt = rPrompt.nextLine();
@@ -39,8 +39,8 @@ public class Main {
         else if(Objects.equals(dPrompt, "2")) {
             fc.ReadFromLogFile();
         }
-        else {
-            fc.display();
+        else if(Objects.equals(dPrompt, "3")){
+            fc.clear();
         }
     }
 }
