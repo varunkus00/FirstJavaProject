@@ -58,7 +58,7 @@ public class FirstClass {
     public void clear() {
         File obj = new File(FilePath+FileName);
         if( obj.delete()) {
-            System.out.println("Test Removed");
+            System.out.println("Text Removed");
         }
     }
 
