@@ -9,8 +9,8 @@ import java.util.Scanner;
 
 public class FirstClass {
 
-    public String name;
-    int age;
+    //public String name;
+    //int age;
     String FileName = "FirstClass.log";
     String FilePath = "C:/Users/shriv/Downloads/Documents/";
 
