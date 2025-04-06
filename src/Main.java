@@ -27,7 +27,7 @@ public class Main {
 
                 System.out.println("Enter the valid file path : ");
                 Scanner rfilePath = new Scanner(System.in);
-                String dFilePath = rfileName.nextLine();
+                String dFilePath = rfilePath.nextLine();
                 fc.setFileName(dFileName);
                 fc.setFilePath(dFilePath);
                 break;

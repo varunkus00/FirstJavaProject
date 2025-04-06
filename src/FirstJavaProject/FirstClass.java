@@ -14,13 +14,13 @@ public class FirstClass {
     String FileName = "FirstClass.log";
     String FilePath = "C:/Users/shriv/Downloads/Documents/";
 
-    public void setName(String name) {
+    /*public void setName(String name) {
         this.name = name;
     }
 
     public void setAge(int age) {
         this.age = age;
-    }
+    }*/
 
     public void setFileName(String FileName) {
         this.FileName = FileName;
@@ -30,9 +30,9 @@ public class FirstClass {
         this.FilePath = FilePath;
     }
 
-    public void display() {
+    /*public void display() {
         System.out.println("My name is : "+name+". My age is : "+age);
-    }
+    }*/
 
     public String getFileName() {
         return FileName;
@@ -146,7 +146,7 @@ public class FirstClass {
             File obj = new File(FilePath+FileName);
             Scanner read = new Scanner(obj);
             while(read.hasNextLine()) {
-                String data = read.nextLine();
+                read.nextLine();
                 countOfLines++;
             }
             read.close();
