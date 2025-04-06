@@ -106,6 +106,7 @@ public class FirstClass {
             FileWriter obj = new FileWriter(FilePath+FileName);
             obj.write("");
             System.out.println("Content Cleared");
+            obj.close();
         } catch (IOException e) {
             System.out.println("An Error Occurred");
             e.printStackTrace();
